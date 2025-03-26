@@ -1,9 +1,7 @@
-import { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
-import { CustomButton } from "./CustomButton";
 import { SectionHeader } from "./SectionHeader";
 import Dot from "../assets/icons/DotSlider.svg"
 import DotActive from "../assets/icons/DotSliderActive.svg"
@@ -40,7 +38,7 @@ export const TestimonialSlider: React.FC = () => {
       arrows: false,
       autoplay: true,
       autoplaySpeed: 5000,
-      beforeChange: (oldIndex: number, newIndex: number) => setCurrentSlide(newIndex),
+      beforeChange: ( newIndex: number) => setCurrentSlide(newIndex),
       customPaging: (i:any  ) => (
           <img
               src={i === currentSlide ? DotActive : Dot}

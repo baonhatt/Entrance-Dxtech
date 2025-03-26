@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavigationBar } from "./NavigationBar";
 import logoFooter from "../assets/logo-footer.png"
 import linkInIcon from "../assets/icons/LinkedWhiteIcon.svg"
 import twitterIcon from "../assets/icons/TwitterWhiteIcon.svg"
