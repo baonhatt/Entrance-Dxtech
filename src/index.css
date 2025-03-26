@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+:root{
+  --bg-black-400: #191919;
+  --myblack: #191A23;
+  --mylime: #B9FF66;
+  --mygray: #F3F3F3;
+  --mywhite: #FFFFFF;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@theme{
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+
+  --color-black: #191A23;
+  --color-white: #fffff;
+}
+@layer utilities {
+    .animate-slide-down {
+      animation: slideDown 0.3s ease-in-out;
+    }
+  
+    @keyframes slideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
